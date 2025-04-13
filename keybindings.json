@@ -4,8 +4,8 @@
         // Special case: when in first editor group (pane), go to sidebar
         // if visible.
         "key": "ctrl+h",
-        "command": "workbench.explorer.fileView.focus",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         // "ctrl+l": Focuses on the right editor group when the text editor is focused, Vim extension is active, and Vim is not in Insert mode
@@ -28,6 +28,6 @@
     {
         "key": "\\",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "!editorTextFocus"
+        "when": "!editorTextFocus && !terminalFocus"
     }
 ]
