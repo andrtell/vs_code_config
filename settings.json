@@ -1,0 +1,77 @@
+{
+    "dev.containers.dockerPath": "podman",
+    "dev.containers.dockerComposePath": "podman-compose",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "extensions.ignoreRecommendations": true,
+    "window.customTitleBarVisibility": "auto",
+    "window.zoomLevel": 1.8,
+    "editor.minimap.enabled": false,
+    "editor.roundedSelection": false,
+    "editor.formatOnSave": true,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSurroundingLines": 8,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.folding": false,
+    "editor.lineNumbers": "off",
+    "git.autofetch": true,
+    "git.ignoreMissingGitWarning": true,
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.editor.showTabs": "none",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<escape>"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
+        },
+        {
+            "before": [
+                "\\",
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "commands": [
+                "leap.find"
+            ]
+        },
+    ]
+}
